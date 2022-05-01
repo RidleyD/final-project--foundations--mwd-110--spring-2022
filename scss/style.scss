@@ -2,16 +2,231 @@
 @use 'reset';
 
 body {
+  margin:auto;
   font-family: $font-stack--reading;
-  background-color: red;
+  background-color: #eacd05;
+
 }
 
+.logo-fixed {
+  margin: auto;
+  display: block;
+  border-radius: 4px;
+  padding: 4px;
+  position: fixed;
+  top: 30px;
+  left: 16px;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.port {
+  background: #04955c;
+  color: white;
+  &:hover {
+    background: #ff0000;
+}
+
+}
+.cont {
+  background: #04955c;
+  color: white;
+  &:hover {
+    background: #ff0000;
+}
+}
+
+.abou {
+  background: #04955c;
+  color: white;
+  &:hover {
+    background: #ff0000;
+}
+}
+
+.lastest-album {
+  background: #000000;
+  color: white;
+  &:hover {
+    background: #ff0000;
+}
+}
 
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-  font-family: $font-stack--headings;
+h4 {
+  text-align: center;
+  padding: 5px;
+  font-size: 75px;
 }
+
+.koffee-bio{
+  text-align: center;
+  padding: 16px;
+}
+
+.koffee-bio-two{
+  text-align: center;
+  padding: 16px;
+}
+
+.about-img{
+  margin: auto;
+  display: block;
+  border-radius: 200px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.about-img:hover {
+  box-shadow: 
+  rgba(0, 0, 0, 0.5) 5px 3px,
+  rgba(0, 0, 0, 0.4) 10px 6px,
+  rgba(0, 0, 0, 0.3) 15px 9px;
+}
+
+header{
+  margin:auto;
+  text-align: right;
+  padding: 25px;
+}
+
+body {
+  text-align: center;
+  margin: auto;
+  padding: 30px;
+}
+
+.koffee-west-indies,
+.koffee-pull-up,
+.koffee-w,
+.koffee-lock-down,
+.koffee-pressure {
+  text-align: center;
+  padding: 5px;
+  font-size: 40px;
+}
+
+nav{
+  text-align: center;
+  padding: auto;
+}
+
+.cover-img{
+  display: block;
+  border-radius: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: white;
+  transition: box-shadow .25s ease-in;
+}
+
+.cover-img:hover {
+  box-shadow: 
+  rgba(0, 0, 0, 0.5) 5px 3px,
+  rgba(0, 0, 0, 0.4) 10px 6px,
+  rgba(0, 0, 0, 0.3) 15px 9px;
+}
+
+.west-indies-img {
+  margin: auto;
+  display: block;
+  box-shadow: rgb(4, 149, 91);
+}
+
+.west-indies-img:hover {
+  box-shadow: 
+  rgba(4, 149, 91, 0.5) 5px 3px,
+  rgba(4, 149, 91, 0.4) 10px 6px,
+  rgba(4, 149, 91, 0.3) 15px 9px;
+}
+
+.pull-up-img {
+  margin: auto;
+  display: block;
+  box-shadow: rgb(0, 0, 0);
+}
+
+.pull-up-img:hover {
+  box-shadow: 
+  rgba(0, 0, 0, 0.5) 5px 3px,
+  rgba(0, 0, 0, 0.4) 10px 6px,
+  rgba(0, 0, 0, 0.3) 15px 9px;
+}
+
+.w-img {
+  margin: auto;
+  display: block;
+  box-shadow: rgb(4, 149, 91);
+}
+
+.w-img:hover {
+  box-shadow: 
+  rgba(4, 149, 91, 0.5) 5px 3px,
+  rgba(4, 149, 91, 0.4) 10px 6px,
+  rgba(4, 149, 91, 0.3) 15px 9px;
+}
+
+.lock-down-img {
+  margin: auto;
+  display: block;
+  box-shadow: rgb(0, 0, 0);
+}
+
+.lock-down-img:hover {
+  box-shadow: 
+  rgba(0, 0, 0, 0.5) 5px 3px,
+  rgba(0, 0, 0, 0.4) 10px 6px,
+  rgba(0, 0, 0, 0.3) 15px 9px;
+}
+
+.pressure-img {
+  margin: auto;
+  display: block;
+  box-shadow: rgb(4, 149, 91);
+}
+
+.pressure-img:hover {
+  box-shadow: 
+  rgba(4, 149, 91, 0.5) 5px 3px,
+  rgba(4, 149, 91, 0.4) 10px 6px,
+  rgba(4, 149, 91, 0.3) 15px 9px;
+}
+
+.socials {
+  font-style: italic;
+  text-align: center;
+  padding: 16px;
+  font-size: 20px; 
+  color: #ffffff;
+}
+
+.socials-row {
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  display: flex;
+}
+
+.koffee-contact {
+  margin: auto;
+  display: block;
+  box-shadow: 0 0 20px rgb(255, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.copy-right {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+} 
