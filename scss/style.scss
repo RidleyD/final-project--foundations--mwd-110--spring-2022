@@ -5,7 +5,9 @@ body {
   margin:auto;
   font-family: $font-stack--reading;
   background-color: #eacd05;
-
+  border: 10px solid transparent;
+  text-align: center;
+  padding: 30px;
 }
 
 .logo-fixed {
@@ -61,22 +63,25 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: 'Reggae One', cursive;
   text-align: center;
   padding: 5px;
   font-size: 75px;
 }
 
-.koffee-bio{
+.koffee-bio {
   text-align: center;
   padding: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.koffee-bio-two{
+.koffee-bio-two {
   text-align: center;
   padding: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.about-img{
+.about-img {
   margin: auto;
   display: block;
   border-radius: 200px;
@@ -90,16 +95,11 @@ h4 {
   rgba(0, 0, 0, 0.3) 15px 9px;
 }
 
-header{
+header {
   margin:auto;
   text-align: right;
   padding: 25px;
-}
-
-body {
-  text-align: center;
-  margin: auto;
-  padding: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .koffee-west-indies,
@@ -110,14 +110,15 @@ body {
   text-align: center;
   padding: 5px;
   font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-nav{
+nav {
   text-align: center;
   padding: auto;
 }
 
-.cover-img{
+.cover-img {
   display: block;
   border-radius: 200px;
   margin-left: auto;
@@ -206,6 +207,7 @@ nav{
   padding: 16px;
   font-size: 20px; 
   color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .socials-row {
@@ -229,4 +231,26 @@ nav{
   color: white;
   font-size: 13px;
   text-align: center;
-} 
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    border-color: #DA121A;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media (min-width: 1224px) {
+  body {
+    border-color: #FCDD09;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    border-color: #078930;
+  }
+}
