@@ -8,13 +8,28 @@ body {
   border: 10px solid transparent;
   text-align: center;
   padding: 30px;
+/* phones */
+  @media (min-width: 400px) {
+  width:auto;
+  border-color: #ff0000;
+  }
+/* tablet */
+@media (min-width: 800px) {
+  width:auto;
+  border-color: #04955c;
+}  
+/* desktop */
+@media (min-width: 1200px) {
+  width:auto;
+  border-color:#eacd05;
+}  
 }
 
 .port {
   background: #04955c;
   color: white;
   &:hover {
-    background: #ff0000;
+  background: #ff0000;
 }
 }
 
@@ -22,7 +37,7 @@ body {
   background: #04955c;
   color: white;
   &:hover {
-    background: #ff0000;
+  background: #ff0000;
 }
 }
 
@@ -30,7 +45,7 @@ body {
   background: #04955c;
   color: white;
   &:hover {
-    background: #ff0000;
+  background: #ff0000;
 }
 }
 
@@ -45,7 +60,7 @@ body {
   background: #000000;
   color: white;
   &:hover {
-    background: #ff0000;
+  background: #ff0000;
 }
 }
 
@@ -202,27 +217,6 @@ header {
   rgba(0, 0, 0, 0.5) 5px 3px,
   rgba(0, 0, 0, 0.4) 10px 6px,
   rgba(0, 0, 0, 0.3) 15px 9px;
-}
-
-/* Smartphones (portrait and landscape) */
-@media (min-width: 320px) and (max-width: 480px) {
-  body {
-    border-color: #DA121A;
-  }
-}
-
-/* Desktops and laptops */
-@media (min-width: 1224px) {
-  body {
-    border-color: #FCDD09;
-  }
-}
-
-/* iPads (portrait and landscape) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    border-color: #078930;
-  }
 }
 
 .koffee-contact {
