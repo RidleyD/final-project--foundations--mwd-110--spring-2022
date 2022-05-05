@@ -10,31 +10,14 @@ body {
   padding: 30px;
 }
 
-.logo-fixed {
-  margin: auto;
-  display: block;
-  border-radius: 4px;
-  padding: 4px;
-  position: fixed;
-  top: 30px;
-  left: 16px;
-}
-
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-}
-
 .port {
   background: #04955c;
   color: white;
   &:hover {
     background: #ff0000;
 }
-
 }
+
 .cont {
   background: #04955c;
   color: white;
@@ -51,6 +34,13 @@ body {
 }
 }
 
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
 .lastest-album {
   background: #000000;
   color: white;
@@ -59,10 +49,50 @@ body {
 }
 }
 
+.cover-img {
+  display: block;
+  border-radius: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: white;
+  transition: box-shadow .25s ease-in;
+}
+
+.cover-img:hover {
+  box-shadow: 
+  rgba(0, 0, 0, 0.5) 5px 3px,
+  rgba(0, 0, 0, 0.4) 10px 6px,
+  rgba(0, 0, 0, 0.3) 15px 9px;
+}
+
+.portfolio-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  margin: auto;
+}
+
+.item {
+  position: relative;
+  width: 50%;
+  line-height: 0;
+}
+
+.logo-fixed {
+  margin: auto;
+  display: block;
+  border-radius: 4px;
+  padding: 4px;
+  position: fixed;
+  top: 30px;
+  left: 16px;
+}
+
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: 'Reggae One', cursive;
   text-align: center;
   padding: 5px;
@@ -105,41 +135,21 @@ header {
 .koffee-west-indies,
 .koffee-pull-up,
 .koffee-w,
-.koffee-lock-down,
-.koffee-pressure {
+.koffee-lock-down {
   text-align: center;
   padding: 5px;
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
 }
 
-nav {
-  text-align: center;
-  padding: auto;
-}
-
-.cover-img {
-  display: block;
-  border-radius: 200px;
+.west-indies-img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  background: white;
-  transition: box-shadow .25s ease-in;
-}
-
-.cover-img:hover {
-  box-shadow: 
-  rgba(0, 0, 0, 0.5) 5px 3px,
-  rgba(0, 0, 0, 0.4) 10px 6px,
-  rgba(0, 0, 0, 0.3) 15px 9px;
-}
-
-.west-indies-img {
-  margin: auto;
   display: block;
   box-shadow: rgb(4, 149, 91);
+  padding: auto;
 }
 
 .west-indies-img:hover {
@@ -150,9 +160,13 @@ nav {
 }
 
 .pull-up-img {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: block;
   box-shadow: rgb(0, 0, 0);
+  padding: auto;
 }
 
 .pull-up-img:hover {
@@ -166,6 +180,7 @@ nav {
   margin: auto;
   display: block;
   box-shadow: rgb(4, 149, 91);
+  padding: auto;
 }
 
 .w-img:hover {
@@ -179,6 +194,7 @@ nav {
   margin: auto;
   display: block;
   box-shadow: rgb(0, 0, 0);
+  padding: auto;
 }
 
 .lock-down-img:hover {
@@ -188,17 +204,40 @@ nav {
   rgba(0, 0, 0, 0.3) 15px 9px;
 }
 
-.pressure-img {
-  margin: auto;
-  display: block;
-  box-shadow: rgb(4, 149, 91);
+/* Smartphones (portrait and landscape) */
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    border-color: #DA121A;
+  }
 }
 
-.pressure-img:hover {
-  box-shadow: 
-  rgba(4, 149, 91, 0.5) 5px 3px,
-  rgba(4, 149, 91, 0.4) 10px 6px,
-  rgba(4, 149, 91, 0.3) 15px 9px;
+/* Desktops and laptops */
+@media (min-width: 1224px) {
+  body {
+    border-color: #FCDD09;
+  }
+}
+
+/* iPads (portrait and landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    border-color: #078930;
+  }
+}
+
+.koffee-contact {
+  margin: auto;
+  display: block;
+  box-shadow: 0 0 20px rgb(255, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+nav {
+  text-align: center;
+  padding: auto;
 }
 
 .socials {
@@ -217,40 +256,9 @@ nav {
   display: flex;
 }
 
-.koffee-contact {
-  margin: auto;
-  display: block;
-  box-shadow: 0 0 20px rgb(255, 0, 0);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
 .copy-right {
   color: white;
   font-size: 13px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media (min-width: 320px) and (max-width: 480px) {
-  body {
-    border-color: #DA121A;
-  }
-}
-
-/* Desktops and laptops ----------- */
-@media (min-width: 1224px) {
-  body {
-    border-color: #FCDD09;
-  }
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    border-color: #078930;
-  }
 }
